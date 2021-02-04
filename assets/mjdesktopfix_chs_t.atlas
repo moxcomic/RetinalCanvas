@@ -1,0 +1,42 @@
+{
+    "frames": {
+        "start_left.png": {
+            "frame": {
+                "h": 416,
+                "idx": 0,
+                "w": 666,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 208,
+                "w": 333
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "start_right.png": {
+            "frame": {
+                "h": 382,
+                "idx": 1,
+                "w": 609,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 191,
+                "w": 305
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "start_left.png,start_right.png",
+        "prefix": "chs_t/myres/mjdesktop/"
+    }
+}

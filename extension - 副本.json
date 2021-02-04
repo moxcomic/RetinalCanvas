@@ -1,6 +1,6 @@
 {
   "id": "RetinalCanvas",
-  "version": "1.4.0",
+  "version": "1.3.0",
   "name": "视网膜画布",
   "author": "88826",
   "description": "先通过修改舞台尺寸实现视网膜画布，再通过修改界面去除黑边。\n支持拉伸来实时改变分辨率",
@@ -35,10 +35,34 @@
 	"from": "res/atlas/tanfang.png",
 	"to": "tanfang.png"
   },{
-	"from": "res/atlas/left_tree.png",
+	"from": "res/atlas/chs_t/tanfang.png",
+	"to": "tanfang.png"
+  },{
+	"from": "res/atlas/jp/tanfang.png",
+	"to": "tanfang.png"
+  },{
+	"from": "tanfang/left_tree.png",
 	"to": "left_tree.png"
   },{
-	"from": "res/atlas/right_tree.png",
+	"from": "chs_t/tanfang/left_tree.png",
+	"to": "left_tree.png"
+  },{
+	"from": "jp/tanfang/left_tree.png",
+	"to": "left_tree.png"
+  },{
+	"from": "en/tanfang/left_tree.png",
+	"to": "left_tree.png"
+  },{
+	"from": "tanfang/right_tree.png",
+	"to": "right_tree.png"
+  },{
+	"from": "chs_t/tanfang/right_tree.png",
+	"to": "right_tree.png"
+  },{
+	"from": "jp/tanfang/right_tree.png",
+	"to": "right_tree.png"
+  },{
+	"from": "en/tanfang/right_tree.png",
 	"to": "right_tree.png"
   },{
 	"from": "res/atlas/myres/start_right.png",
