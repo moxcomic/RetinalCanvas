@@ -88,18 +88,22 @@ let fixLobby = function () {
     if (uiscript.UI_WaitingRoom && uiscript.UI_WaitingRoom.Inst && uiscript.UI_WaitingRoom.Inst.invitefriend && uiscript.UI_WaitingRoom.Inst.invitefriend.blackbg) {
         fixedBlackMask(uiscript.UI_WaitingRoom.Inst.invitefriend.blackbg);
     }
+    //黑框（春节活动）
+    if (uiscript.UI_Chunjie && uiscript.UI_Chunjie.Inst && uiscript.UI_Chunjie.Inst._me) {
+        fixedBlackMask(uiscript.UI_Chunjie.Inst._me._childs[0]);
+    }
     //界面偏左问题修正
     if (uiscript.UIMgr && uiscript.UIMgr.Inst && uiscript.UIMgr.Inst._root) {
         uiscript.UIMgr.Inst._root.x = (Laya.stage.width - Laya.stage.height / 18 * 32) / 2;
     }
     //无法点击右方控件修正
     if (uiscript.UI_Lobby && uiscript.UI_Lobby.Inst && uiscript.UI_Lobby.Inst.me) {
-        //uiscript.UI_Lobby.Inst.me._width = scale * 1920;
         uiscript.UI_Lobby.Inst.me.hitTestPrior = false;
     }
-    //活动背景
+    //活动背景（合宿）
     if (uiscript.UI_Hesu && uiscript.UI_Hesu.Inst && uiscript.UI_Hesu.Inst.bg) {
         uiscript.UI_Hesu.Inst.bg.scaleX = scale;
+        uiscript.UI_Hesu.Inst.bg.scaleY = scale;
         uiscript.UI_Hesu.Inst.bg.x = -getFixedPosition();
     }
     //抽卡
@@ -335,6 +339,7 @@ let optimizationLobby = function () {
         container_top.getChildByName("btn_achievement").x = 1848 + fixedX;
         container_top.getChildByName("btn_dongri").x = 1848 + fixedX;
         container_top.getChildByName("btn_hesu").x = 1848 + fixedX;
+        container_top.getChildByName("btn_chunjie").x = 1848 + fixedX;
     }
     //主页底部固件
     if (uiscript.UI_Lobby && uiscript.UI_Lobby.Inst && uiscript.UI_Lobby.Inst.me && uiscript.UI_Lobby.Inst.me.getChildByName("container_btns")) {
